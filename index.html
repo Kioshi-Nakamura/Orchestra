@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SGGS Orchestra Concert Ticket System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎶 SGGS Orchestra Concert Ticket System 🎶</h1>
+            <p>Welcome to the SGGS Orchestra concert ticket system! 😊 Choose your ticket category below:</p>
+        </header>
+
+        <div class="ticket-form">
+            <label for="ticket-category">✨ Select Ticket Category:</label>
+            <select id="ticket-category">
+                <option value="pelajar_sggs">Pelajar SGGS 🎓 (RM12.00)</option>
+                <option value="guru_sggs">Guru SGGS 👨‍🏫 (RM14.00)</option>
+                <option value="bawah_12">Orang Awam Bawah 12 👶 (RM5.50)</option>
+                <option value="13_50">Orang Awam 13-50 👩‍🦱 (RM20.00)</option>
+                <option value="51_atas">Orang Awam 51 Ke Atas 👵 (RM15.00)</option>
+            </select>
+
+            <button onclick="addTicket()">Add Ticket</button>
+        </div>
+
+        <div class="total">
+            <h2>Total: RM <span id="total-amount">0.00</span></h2>
+        </div>
+
+        <footer>
+            <p>✨ Thank you for purchasing tickets! ✨</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
