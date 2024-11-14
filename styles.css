@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4B0082;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Container for layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling the Ticket Form */
+.ticket-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ticket-form select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 2px solid #4B0082;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a4b8e;
+}
+
+/* Total Amount Display */
+.total {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4B0082;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
+
+/* Aesthetic touches */
+footer p {
+    font-size: 18px;
+    color: #4B0082;
+}
+
+select, button {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
