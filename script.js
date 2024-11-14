@@ -1,6 +1,7 @@
 let totalAmount = 0;
+let continueBuyingStatus = true;
 
-// Prices for different categories
+// Harga bagi setiap kategori
 const ticketPrices = {
     pelajar_sggs: 12.00,
     guru_sggs: 14.00,
@@ -9,13 +10,27 @@ const ticketPrices = {
     51_atas: 15.00
 };
 
-// Add a ticket when the user selects a category
+// Fungsi untuk menambah tiket ke jumlah keseluruhan
 function addTicket() {
     const category = document.getElementById("ticket-category").value;
 
-    // Add the price based on the selected category
+    // Tambahkan harga berdasarkan kategori tiket yang dipilih
     totalAmount += ticketPrices[category];
 
-    // Update the total amount displayed on the webpage
+    // Kemas kini paparan jumlah tiket
     document.getElementById("total-amount").textContent = totalAmount.toFixed(2);
+}
+
+// Fungsi untuk memutuskan sama ada ingin terus membeli tiket atau tidak
+function continueBuying(continueBuyingFlag) {
+    if (continueBuyingFlag) {
+        // Jika ya, teruskan membeli tiket
+        document.querySelector('.ticket-form').style.display = 'block';
+        document.querySelector('.continue-form').style.display = 'none';
+    } else {
+        // Jika tidak, sembunyikan borang dan paparkan mesej terima kasih
+        document.querySelector('.ticket-form').style.display = 'none';
+        document.querySelector('.continue-form').style.display = 'none';
+        document.querySelector('footer').style.display = 'block';
+    }
 }
