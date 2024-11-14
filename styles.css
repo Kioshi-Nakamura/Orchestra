@@ -1,23 +1,22 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    font-family: 'Playfair Display', serif;
+    background-color: #6E1313;
+    color: #F4B3B3;
     margin: 0;
     padding: 0;
 }
 
-h1 {
+h1, footer p {
     font-size: 36px;
-    color: #4B0082;
     text-align: center;
-    margin-top: 20px;
+    color: #F4B3B3;
 }
 
-header p {
+header p, .continue-form p {
     text-align: center;
     font-size: 18px;
-    color: #555;
+    color: #F4B3B3;
 }
 
 /* Container for layout */
@@ -29,7 +28,7 @@ header p {
 
 /* Styling the Ticket Form */
 .ticket-form {
-    background-color: #fff;
+    background-color: #0F0000;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -41,14 +40,15 @@ header p {
     padding: 10px;
     font-size: 16px;
     margin: 10px 0;
-    border: 2px solid #4B0082;
+    border: 2px solid #440000;
     border-radius: 5px;
+    background-color: #F4B3B3;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #4B0082;
-    color: #fff;
+    background-color: #440000;
+    color: #F4B3B3;
     font-size: 18px;
     border: none;
     border-radius: 5px;
@@ -57,7 +57,13 @@ button {
 }
 
 button:hover {
-    background-color: #7a4b8e;
+    background-color: #002028;
+}
+
+/* Continue Form */
+.continue-form {
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* Total Amount Display */
@@ -66,19 +72,18 @@ button:hover {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #4B0082;
+    color: #F4B3B3;
 }
 
 footer {
     text-align: center;
     margin-top: 50px;
-    color: #777;
+    color: #F4B3B3;
 }
 
 /* Aesthetic touches */
 footer p {
     font-size: 18px;
-    color: #4B0082;
 }
 
 select, button {
@@ -91,3 +96,4 @@ select, button {
         width: 95%;
     }
 }
+
