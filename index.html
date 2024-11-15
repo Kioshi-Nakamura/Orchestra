@@ -3,43 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sistem Tiket Konsert Orkestra SGGS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>SGGS Orchestra Ticket System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🎶 Sistem Tiket Konsert Orkestra SGGS 🎶</h1>
-            <p>Selamat datang! Pilih kategori tiket yang anda ingin beli:</p>
+            <h1>🎶🎤🎶🎉 WELCOME TO SGGS ORCHESTRA CONCERT TICKET SYSTEM 🎉🎶🎤🎶</h1>
+            <div class="divider"></div>
         </header>
 
-        <div class="ticket-form">
-            <label for="ticket-category">✨ Pilih Kategori Tiket:</label>
-            <select id="ticket-category">
-                <option value="pelajar_sggs">Pelajar SGGS 🎓 (RM12.00)</option>
-                <option value="guru_sggs">Guru SGGS 👨‍🏫 (RM14.00)</option>
-                <option value="bawah_12">Orang Awam Bawah 12 👶 (RM5.50)</option>
-                <option value="13_50">Orang Awam 13-50 👩‍🦱 (RM20.00)</option>
-                <option value="51_atas">Orang Awam 51 Ke Atas 👵 (RM15.00)</option>
-            </select>
+        <main>
+            <h2>🌟 Tiket Konsert Orkestra SGGS 🌟</h2>
+            <form id="ticketForm">
+                <label for="category">Pilih kategori tiket:</label>
+                <select id="category" name="category">
+                    <option value="pelajar sggs">Pelajar SGGS</option>
+                    <option value="guru sggs">Guru SGGS</option>
+                    <option value="orang awam <12">Orang Awam <12</option>
+                    <option value="orang awam 13-50">Orang Awam 13-50</option>
+                    <option value="orang awam 51+">Orang Awam 51+</option>
+                </select>
+                <button type="button" onclick="addTicket()">Tambah Tiket</button>
+            </form>
 
-            <button onclick="addTicket()">Tambah Tiket</button>
-        </div>
+            <div id="tickets-list"></div>
 
-        <div class="continue-form">
-            <p>🌸 Adakah anda ingin membeli tiket lain?</p>
-            <button onclick="continueBuying(true)">Ya</button>
-            <button onclick="continueBuying(false)">Tidak</button>
-        </div>
+            <div id="total">
+                <h3>Jumlah Harga: RM <span id="total-price">0.00</span></h3>
+            </div>
 
-        <div class="total">
-            <h2>Total: RM <span id="total-amount">0.00</span></h2>
-        </div>
+            <button id="finishBtn" onclick="finishPurchase()">Selesai Pembelian</button>
+        </main>
 
         <footer>
-            <p>✨ Terima kasih kerana membeli tiket konsert orkestra SGGS! ✨</p>
+            <p>🎉 Terima kasih kerana menggunakan Sistem Tiket Konsert Orkestra SGGS! 🎉</p>
         </footer>
     </div>
 
