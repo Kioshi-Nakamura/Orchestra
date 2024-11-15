@@ -1,11 +1,12 @@
-/* General styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+/* Body */
 body {
     background-color: #F8EDD6;
     color: #0F0000;
@@ -13,68 +14,88 @@ body {
     padding: 30px;
 }
 
+/* Container */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #F4B3B3;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 20px;
 }
 
+/* Header */
 header h1 {
     color: #6E1313;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #440000;
-    font-size: 2em;
+/* Ticket Selection */
+.ticket-selection {
+    background-color: #002028;
+    color: #F8EDD6;
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-label, select, button {
-    font-size: 1.1em;
-    margin: 10px;
+.ticket-selection h2 {
+    font-size: 1.8em;
+    color: #F4B3B3;
+}
+
+select, button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 select {
-    padding: 5px;
-    background-color: #002028;
+    background-color: #0F0000;
     color: #F8EDD6;
     border: none;
     border-radius: 5px;
+    width: 200px;
 }
 
 button {
-    padding: 10px 20px;
     background-color: #6E1313;
     color: #F8EDD6;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 button:hover {
     background-color: #440000;
 }
 
-#total {
-    margin-top: 20px;
+/* Ticket List */
+.ticket-list {
+    background-color: #440000;
+    color: #F8EDD6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.ticket-list h3 {
     font-size: 1.5em;
-    color: #6E1313;
 }
 
-footer {
-    margin-top: 40px;
-    font-size: 1.1em;
-    color: #002028;
+/* Total Section */
+.total {
+    background-color: #002028;
+    color: #F8EDD6;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.divider {
-    height: 2px;
-    background-color: #6E1313;
-    margin: 20px 0;
+.total h3 {
+    font-size: 1.5em;
+    color: #F4B3B3;
 }
 
 #finishBtn {
@@ -88,4 +109,11 @@ footer {
 
 #finishBtn:hover {
     background-color: #440000;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #002028;
 }
