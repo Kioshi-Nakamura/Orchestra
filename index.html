@@ -9,14 +9,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>🎶🎤🎶🎉 WELCOME TO SGGS ORCHESTRA CONCERT TICKET SYSTEM 🎉🎶🎤🎶</h1>
-            <div class="divider"></div>
+            <h1>🎶🎤🎉 Welcome to SGGS Orchestra Concert Ticket System 🎉🎤🎶</h1>
         </header>
 
         <main>
-            <h2>🌟 Tiket Konsert Orkestra SGGS 🌟</h2>
-            <form id="ticketForm">
-                <label for="category">Pilih kategori tiket:</label>
+            <section class="ticket-selection">
+                <h2>🌟 Select Your Ticket Category 🌟</h2>
+                <label for="category">Choose a Ticket Category:</label>
                 <select id="category" name="category">
                     <option value="pelajar sggs">Pelajar SGGS</option>
                     <option value="guru sggs">Guru SGGS</option>
@@ -24,20 +23,22 @@
                     <option value="orang awam 13-50">Orang Awam 13-50</option>
                     <option value="orang awam 51+">Orang Awam 51+</option>
                 </select>
-                <button type="button" onclick="addTicket()">Tambah Tiket</button>
-            </form>
+                <button onclick="addTicket()">Add Ticket</button>
+            </section>
 
-            <div id="tickets-list"></div>
+            <section class="ticket-list">
+                <h3>Your Selected Tickets</h3>
+                <div id="tickets-list"></div>
+            </section>
 
-            <div id="total">
-                <h3>Jumlah Harga: RM <span id="total-price">0.00</span></h3>
-            </div>
-
-            <button id="finishBtn" onclick="finishPurchase()">Selesai Pembelian</button>
+            <section class="total">
+                <h3>Total Amount: RM <span id="total-price">0.00</span></h3>
+                <button id="finishBtn" onclick="finishPurchase()">Complete Purchase</button>
+            </section>
         </main>
 
         <footer>
-            <p>🎉 Terima kasih kerana menggunakan Sistem Tiket Konsert Orkestra SGGS! 🎉</p>
+            <p>🎉 Thank you for using the SGGS Orchestra Ticket System! 🎉</p>
         </footer>
     </div>
 
